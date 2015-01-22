@@ -1,4 +1,4 @@
-project(libyuv)
+project(yuv)
 
 set(ly_base_dir ${CMAKE_CURRENT_LIST_DIR})
 set(ly_src_dir ${ly_base_dir}/source)
@@ -71,8 +71,7 @@ add_definitions(
  
 include_directories(${ly_inc_dir})
  
-#add_library(${ly_lib_name} STATIC ${ly_source_files})
-add_library(libyuv ${ly_source_files} ${ly_header_files})
+add_library(yuv STATIC ${ly_source_files} ${ly_header_files})
  
 install(TARGETS ${ly_lib_name} DESTINATION lib)
 install(FILES ${ly_header_files} DESTINATION include/libyuv)
