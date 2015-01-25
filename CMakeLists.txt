@@ -71,7 +71,7 @@ add_definitions(
  
 include_directories(${ly_inc_dir})
  
-add_library(yuv STATIC ${ly_source_files} ${ly_header_files})
+add_library(yuv ${ly_source_files} ${ly_header_files})
  
 install(TARGETS ${ly_lib_name} DESTINATION lib)
 install(FILES ${ly_header_files} DESTINATION include/libyuv)
