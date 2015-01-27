@@ -73,7 +73,7 @@ include_directories(${ly_inc_dir})
  
 add_library(yuv ${ly_source_files} ${ly_header_files})
  
-install(TARGETS ${ly_lib_name} DESTINATION lib)
+install(TARGETS yuv DESTINATION lib)
 install(FILES ${ly_header_files} DESTINATION include/libyuv)
 install(FILES ${ly_inc_dir}/libyuv.h DESTINATION include/)
 
