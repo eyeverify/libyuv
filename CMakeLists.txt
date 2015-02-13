@@ -3,7 +3,7 @@ project(yuv)
 set(ly_base_dir ${CMAKE_CURRENT_LIST_DIR})
 set(ly_src_dir ${ly_base_dir}/source)
 set(ly_inc_dir ${ly_base_dir}/include)
- 
+
 set(ly_source_files
   ${ly_src_dir}/compare.cc
   ${ly_src_dir}/compare_common.cc
@@ -41,7 +41,7 @@ set(ly_source_files
   ${ly_src_dir}/scale_win.cc
   ${ly_src_dir}/video_common.cc
 )
- 
+
 set(ly_header_files
   ${ly_inc_dir}/libyuv/basic_types.h
   ${ly_inc_dir}/libyuv/compare.h
@@ -62,18 +62,17 @@ set(ly_header_files
   ${ly_inc_dir}/libyuv/version.h
   ${ly_inc_dir}/libyuv/video_common.h
 )
- 
+
 add_definitions(
   -DLIBYUV_DISABLE_NEON
   -DLIBYUV_DISABLE_MIPS
   -DLIBYUV_DISABLE_AVX
 )
- 
-include_directories(${ly_inc_dir})
- 
-add_library(yuv STATIC ${ly_source_files} ${ly_header_files})
- 
-install(TARGETS yuv DESTINATION lib)
-install(FILES ${ly_header_files} DESTINATION include/libyuv)
-install(FILES ${ly_inc_dir}/libyuv.h DESTINATION include/)
 
+include_directories(${ly_inc_dir})
+
+add_library(yuv STATIC ${ly_source_files} ${ly_header_files})
+
+# install(TARGETS yuv DESTINATION lib)
+# install(FILES ${ly_header_files} DESTINATION include/libyuv)
+# install(FILES ${ly_inc_dir}/libyuv.h DESTINATION include/)
