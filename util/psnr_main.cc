@@ -308,6 +308,7 @@ bool UpdateMetrics(uint8* ch_org, uint8* ch_rec,
   return ismin;
 }
 
+/*
 int main(int argc, const char* argv[]) {
   ParseOptions(argc, argv);
   if (!do_psnr && !do_ssim) {
@@ -646,3 +647,4 @@ int main(int argc, const char* argv[]) {
   delete[] file_rec;
   return 0;
 }
+ */

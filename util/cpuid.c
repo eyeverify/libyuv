@@ -17,6 +17,7 @@
 #include "./psnr.h"
 #include "./ssim.h"
 
+/*
 int main(int argc, const char* argv[]) {
   int cpu_flags = TestCpuFlag(-1);
   int has_arm = TestCpuFlag(kCpuHasARM);
@@ -91,4 +92,4 @@ int main(int argc, const char* argv[]) {
   }
   return 0;
 }
-
+*/

@@ -186,6 +186,7 @@ static int TileARGBScale(const uint8* src_argb, int src_stride_argb,
   return 0;
 }
 
+/*
 int main(int argc, const char* argv[]) {
   ParseOptions(argc, argv);
 
@@ -363,3 +364,4 @@ int main(int argc, const char* argv[]) {
   delete[] file_rec;
   return 0;
 }
+ */
