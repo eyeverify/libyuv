@@ -64,7 +64,7 @@ set(ly_header_files
 )
 
 add_definitions(
-  -DLIBYUV_DISABLE_NEON
+#  -DLIBYUV_DISABLE_NEON
   -DLIBYUV_DISABLE_MIPS
   -DLIBYUV_DISABLE_AVX
 )
