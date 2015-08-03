@@ -40,6 +40,10 @@ set(ly_source_files
   ${ly_src_dir}/scale_posix.cc
   ${ly_src_dir}/scale_win.cc
   ${ly_src_dir}/video_common.cc
+  ${ly_src_dir}/compare_neon64.cc
+  ${ly_src_dir}/rotate_neon64.cc
+  ${ly_src_dir}/row_neon64.cc
+  ${ly_src_dir}/scale_neon64.cc
 )
 
 set(ly_header_files
